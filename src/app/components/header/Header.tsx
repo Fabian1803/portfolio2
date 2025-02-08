@@ -41,7 +41,7 @@ export default function Header() {
         {isSmallScreen ? (
           <motion.div
             {...animateHeaderMobile}
-            className="fixed bg-blue-400 top-[60px] right-[0px] w-[40%] rounded-lg p-5 m-2 z-50">
+            className="fixed bg-secondary top-[60px] right-[0px] w-[40%] rounded-lg p-5 m-2 z-50">
             <NavHeader setValClick={setValClick} />
           </motion.div>
         ) : ( <div className="p-5"><NavHeader setValClick={setValClick}/></div> )}

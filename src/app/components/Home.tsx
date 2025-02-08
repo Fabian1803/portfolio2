@@ -10,7 +10,8 @@ import LetterCarousel from "@/app/ui/LetterCarousel";
 import { AnimateOpacity, AnimationUp1, AnimationUp2, AnimationRight, AnimationLeft } from "@/app/lib/animations";
 import { motion } from "framer-motion";
 import { useSmallScreen } from "@/app/hooks/useSmallScreen";
-export default function Main() {
+import Link from "next/link";
+export default function Home() {
     const isSmallScreen = useSmallScreen();
     return (
         <main className="flex flex-col gap-16 pb-16" >
@@ -82,10 +83,10 @@ export default function Main() {
                         items-center ">
                         <div className=" w-full h-full md:h-[30vw] relative ">
                             <Image src={img} alt="imagen de proyecto" className=" w-full h-full md:h-[30vw] rounded-lg" />
-                            <a href="" className="absolute bg-secondary text-tertiary pr-4 pl-4 pt-3 pb-3 rounded-full 
+                            <Link href="/projectLetter" className="absolute bg-secondary text-tertiary pr-4 pl-4 pt-3 pb-3 rounded-full 
                             aspect-auto left-[90%] top-[85%] border-2 border-primary">
                                 <FontAwesomeIcon icon={faArrowRight} className="rotate-45" />
-                            </a>
+                            </Link>
                         </div>
                     </motion.div>
                     <div className="flex flex-col gap-8">

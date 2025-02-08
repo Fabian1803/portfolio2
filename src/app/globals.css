@@ -4,18 +4,18 @@
 
 :root {
   --font-title: serif;
-  --primary: #161A30;
-  --secondary: #31304D;
-  --tertiary: #B6BBC4;
-  --quaternary: #F0ECE5;
+  --primary: #F0ECE5;
+  --secondary: #B6BBC4;
+  --tertiary: #31304D;
+  --quaternary: #161A30;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #F0ECE5;
-    --secondary: #B6BBC4;
-    --tertiary: #31304D;
-    --quaternary: #161A30;
+    --primary: #161A30;
+    --secondary: #31304D;
+    --tertiary: #B6BBC4;
+    --quaternary: #F0ECE5;
   }
 }
 

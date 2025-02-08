@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { AnimateCircle, AnimateOpacityCircle, AnimateRectangularShape, AnimateRectangularInput } from "@/app/lib/animations";
 import { useState } from "react";
@@ -28,7 +27,6 @@ const RectangularShape: React.FC<ShapeProps> = ({ w }) => {
   )
 }
 
-
 const CicleShapes = () => {
   return (
     <div className="relative w-full h-full">
@@ -41,7 +39,7 @@ const CicleShapes = () => {
       </motion.svg>
       <motion.div
         {...AnimateOpacityCircle}
-        className="w-[20%] h-[20%] rounded-full absolute top-[16%] left-[16%] bg-secondary">
+        className="w-[20%] h-[20%] rounded-full absolute top-[16%] left-[16%] bg-tertiary">
       </motion.div>
     </div>
   )

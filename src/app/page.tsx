@@ -1,10 +1,6 @@
-import { Header, Main, Footer } from "@/app/components/index"
-export default function Home() {
+import { Home } from "@/app/components/index"
+export default function App() {
   return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
+      <Home />
   );
 }
