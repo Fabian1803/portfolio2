@@ -16,14 +16,14 @@ export default function Footer() {
                     <motion.button
                         whileInView={{x: [50, 0]}}
                         transition={{ duration: 1}}
-                        className="bg-green-400 pr-5 pl-5 pt-2 pb-2 rounded-md">
+                        className="bg-secondary pr-5 pl-5 pt-2 pb-2 rounded-md border-2 border-solid border-quaternary">
                         Contactame <FontAwesomeIcon icon={faArrowRight} className='-rotate-45' />
                     </motion.button>
                 </div>
                 <motion.div {...AnimationRight(isSmallScreen)} className="flex flex-col mt-10 mb-10 sm:m-0">
-                    <h3 className='text-[22px] font-semibold'>Redes sociales</h3>
-                    <a href="" >GITHUB</a>
-                    <a href="">buttonEDIN</a>
+                    <h3 className='text-[22px] font-semibold '>Redes sociales</h3>
+                    <a href="" className='hover:border-l-2 border-quaternary hover:pl-1'>GITHUB</a>
+                    <a href="" className='hover:border-l-2 border-quaternary hover:pl-1'>LINKEDIN</a>
                 </motion.div>
             </div>
             <motion.div 

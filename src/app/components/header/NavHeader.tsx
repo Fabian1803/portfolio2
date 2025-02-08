@@ -19,7 +19,7 @@ export default function NavHeader({setValClick} : {setValClick: React.Dispatch<R
         <a href="" className='border-b-[1px] border-black text-sm font-semibold'>GITHUB</a>
       </li>
       <li className='block sm:hidden'>
-        <a href="" className="border-b-[1px] border-black text-sm font-semibold">buttonEDIN</a>
+        <a href="" className="border-b-[1px] border-black text-sm font-semibold">LINKEDIN</a>
       </li>
     </ul>
   );

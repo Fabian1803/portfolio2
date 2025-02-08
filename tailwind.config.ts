@@ -13,6 +13,10 @@ export default {
         foreground: "var(--foreground)",
         greenlt: "var(--greenlt)",
         greenbk: "var(--greenbk)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        tertiary: "var(--tertiary)",
+        quaternary: "var(--quaternary)",
       },
       fontFamily: {
         inter: "var(--font-title)",

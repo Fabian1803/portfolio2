@@ -28,10 +28,10 @@ export default function Header() {
   }
 
   return (
-    <header className="w-full h-[60px] sm:h-[70px] lg:h-[80px] sticky top-0 bg-green-400 z-50" >
+    <header className="w-full h-[60px] sm:h-[70px] lg:h-[80px] sticky top-0 bg-secondary z-50 border-b-2 border-solid border-quaternary" >
       <motion.div {...AnimationUp1}
       className=" w-full h-[100%] z-50 flex justify-between items-center pr-[10%] pl-[10%]">
-        <h2 className="font-inter text-2xl font-semibold">Fabian.</h2>
+        <h2 className="font-inter text-2xl font-semibold">{isSmallScreen ? 'Fbn.': 'Fabian.'}</h2>
         <button onClick={() => setValClick(!valClick)} className="sm:hidden">
           <FontAwesomeIcon
             icon={valClick ? faBars : faXmark}
