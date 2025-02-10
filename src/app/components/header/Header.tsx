@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { useSmallScreen } from "@/app/hooks/useSmallScreen";
 import NavHeader from './NavHeader';
 import { AnimationUp1 } from "@/app/lib/animations";
+import Link from 'next/link';
 
 export default function Header() {
   const [valClick, setValClick] = useState(true);
@@ -31,7 +32,7 @@ export default function Header() {
     <header className="w-full h-[60px] sm:h-[70px] lg:h-[80px] sticky top-0 bg-secondary z-50 border-b-2 border-solid border-quaternary" >
       <motion.div {...AnimationUp1}
       className=" w-full h-[100%] z-50 flex justify-between items-center pr-[10%] pl-[10%]">
-        <h2 className="font-inter text-2xl font-semibold">{isSmallScreen ? 'Fbn.': 'Fabian.'}</h2>
+        <Link href="/" className="font-inter text-2xl font-semibold">{isSmallScreen ? 'Fbn.': 'Fabian.'}</Link>
         <button onClick={() => setValClick(!valClick)} className="sm:hidden">
           <FontAwesomeIcon
             icon={valClick ? faBars : faXmark}
