@@ -37,5 +37,5 @@ const NavHeader = React.memo(({ setValClick, pathname }:
     </ul>
   );
 });
-
+NavHeader.displayName = "NavHeader";
 export default NavHeader;
