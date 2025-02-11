@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Header, Footer,  } from "@/app/components/index"
 import "./globals.css";
@@ -37,12 +37,19 @@ export const metadata: Metadata = {
     description: "Una aplicación web moderna desarrollada con Next.js.",
     images: ["https://tusitio.com/imagen-para-twitter.jpg"],
   },
-  viewport: "width=device-width, initial-scale=1.0",
-  themeColor: "var(--quaternary)",  
   other: {
     google: 'notranslate',
   }
 };
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#B6BBC4' },
+    { media: '(prefers-color-scheme: dark)', color: '#31304D' },
+  ],
+  width: "device-width",
+  initialScale: 1.0,
+}
 
 export default function RootLayout({
   children,

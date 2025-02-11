@@ -78,7 +78,7 @@ export default function ProjectLetter() {
           </li>
         </ul>
 
-        <section>
+        <section id="enlace">
           <h2>Enlace:</h2><p>este es el enlace</p>
         </section>
       </section>
