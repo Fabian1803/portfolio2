@@ -12,7 +12,7 @@ export default function Footer() {
                 <div className="">
                     <motion.h2 {...AnimationLeft(isSmallScreen)}
                         className="font-inter h-auto text-[clamp(1rem,_9vw,_10rem)] sm:text-[clamp(3rem,_4.5vw,_5rem)] font-semibold leading-[90%] pb-9">
-                            Let's work together
+                            Let&apos;s work together
                     </motion.h2>
                     <motion.button
                         whileInView={{x: [50, 0]}}
