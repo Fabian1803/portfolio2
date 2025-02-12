@@ -19,7 +19,7 @@ const LetterCarousel = () => {
     );
   }
   return (
-    <div className="overflow-hidden w-full">
+    <div className="overflow-hidden w-full" translate='no'>
       <motion.div
         className="flex whitespace-nowrap"
         animate={{ x: ['0%', '-100%'] }}

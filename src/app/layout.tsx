@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   keywords: "Next.js, SEO, proyecto web, desarrollo web",
   authors: [
     {
-      name: "Fabian", // Nombre del autor
-      url: "https://github.com/Fabian1803", // URL relacionada con el autor o empresa
+      name: "Fabian",
+      url: "https://github.com/Fabian1803",
     },
   ],
   openGraph: {
@@ -37,9 +37,6 @@ export const metadata: Metadata = {
     description: "Una aplicación web moderna desarrollada con Next.js.",
     images: ["https://tusitio.com/imagen-para-twitter.jpg"],
   },
-  other: {
-    google: 'notranslate',
-  }
 };
 
 export const viewport: Viewport = {

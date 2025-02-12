@@ -17,7 +17,7 @@ export default function Home() {
         <main className="flex flex-col gap-16 pb-16" >
             <section className="pt-5 pr-[5%] sm:pr-[10%] pb-5 pl-[5%] sm:pl-[10%] text-xl w-full overflow-hidden" >
                 <div>
-                    <motion.div  {...AnimationUp2} className="flex gap-1">
+                    <motion.div  {...AnimationUp2} className="flex gap-1" translate="no">
                         <h2 >Hi! i am </h2><h2 className="border-b-2 border-foreground border-solid font-semibold">Fabian</h2>
                     </motion.div>
                 </div>
@@ -38,21 +38,21 @@ export default function Home() {
                 <motion.p
                     {...AnimationUp1}
                     transition={{ delay: 1, duration: .8 }}
-                    className=" w-[80%] lg:w-[45%] text-[17px] sm:text-lg">
-                    Soy <b>ingeniro de Software</b> y <b>desarrollador web</b> especializado en la creacion de webs eficientes.
+                    className=" w-[74%] lg:w-[45%] text-[17px] sm:text-lg">
+                    I am a <b>Software student</b> and <b>web developer</b> focused on learning about creating efficient websites.
                 </motion.p>
                 <motion.ul
                     {...AnimationUp1}
                     transition={{ delay: 1, duration: .8 }}
                     className="flex gap-5 text-3xl h-10 mt-8 mb-8">
-                    <li><FontAwesomeIcon icon={faGithub} /></li>
+                    <a href="https://github.com/Fabian1803"><FontAwesomeIcon icon={faGithub} /></a>
                     <li><FontAwesomeIcon icon={faLinkedin} /></li>
-                    <li><FontAwesomeIcon icon={faGoogle} /></li>
+                    <a href="mailto:fabianriveraabian3@gmail.com"><FontAwesomeIcon icon={faGoogle} /></a>
                 </motion.ul>
                 <div className=" mt-10 mb-10">
                     <LetterCarousel />
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-5" translate="no">
                     {technology.map((list, index) => (
                         <motion.div className="border-2 border-dashed border-quaternary rounded-lg h-14 
                         flex gap-2 justify-center items-center text-quaternary" key={index} {...AnimateOpacity}>
@@ -72,7 +72,7 @@ export default function Home() {
                         <DobleBoxShapes />
                     </div>
                     <h1 className="text-[clamp(3rem,_5vw,_7rem)] text-center m-0 h-full  leading-[100%] font-semibold">
-                        Proyectos
+                    PROJECTS
                     </h1>
                 </motion.div>
                 <div className="grid md:grid-cols-[40%,60%] grid-rows-[auto,auto] gap-5 mt-5 mb-5 font-semibold ">
@@ -106,7 +106,7 @@ export default function Home() {
             flex flex-col gap-16 overflow-hidden text-[17px] sm:text-lg" id="about">
                 <div className="grid md:grid-cols-[50%,50%] items-center">
                     <motion.div {...AnimationLeft(isSmallScreen)} className="w-full text-center flex gap-2 items-center justify-start">
-                        <h2 className=" text-[clamp(4rem,_6vw,_7rem)] font-semibold">Aboutme </h2>
+                        <h2 className=" text-[clamp(4rem,_6vw,_7rem)] font-semibold">About me </h2>
                         <FontAwesomeIcon icon={faStarOfLife} />
                     </motion.div>
                     <motion.div {...AnimationRight(isSmallScreen)} className="gap-3 flex flex-col">
@@ -115,7 +115,9 @@ export default function Home() {
                     </motion.div>
                 </div>
                 <div className="grid md:grid-cols-[50%,50%] items-center">
-                    <motion.h2 {...AnimationLeft(isSmallScreen)} className="w-full text-star text-[clamp(3rem,_6vw,_7rem)] font-semibold leading-[90%]">Formacion y Experiencia</motion.h2>
+                    <motion.h2 {...AnimationLeft(isSmallScreen)} className="w-full text-star text-[clamp(3rem,_6vw,_7rem)] font-semibold leading-[90%]">
+                        Training &amp; Experience
+                        </motion.h2>
                     <div className="p-5">
                         <motion.ol {...AnimateOpacity}
                             className="relative border-l-2 border-dashed border-tertiary">
