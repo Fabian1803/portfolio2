@@ -72,7 +72,7 @@ export default function Home() {
                         <DobleBoxShapes />
                     </div>
                     <h1 className="text-[clamp(3rem,_5vw,_7rem)] text-center m-0 h-full  leading-[100%] font-semibold">
-                    PROJECTS
+                    Projects
                     </h1>
                 </motion.div>
                 <div className="grid md:grid-cols-[40%,60%] grid-rows-[auto,auto] gap-5 mt-5 mb-5 font-semibold ">
