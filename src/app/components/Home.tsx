@@ -116,7 +116,7 @@ export default function Home() {
                 </div>
                 <div className="grid md:grid-cols-[50%,50%] items-center">
                     <motion.h2 {...AnimationLeft(isSmallScreen)} className="w-full text-star text-[clamp(3rem,_6vw,_7rem)] font-semibold leading-[90%]">
-                        Training &amp; Experience
+                        Training & Experience
                         </motion.h2>
                     <div className="p-5">
                         <motion.ol {...AnimateOpacity}
