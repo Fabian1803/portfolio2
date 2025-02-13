@@ -116,12 +116,12 @@ export default function Home() {
                         <FontAwesomeIcon icon={faStarOfLife} />
                     </motion.div>
                     <motion.p className="text-justify" {...AnimationRight(isSmallScreen)}>
-                        Hello, I'm Fabian Rivera, a Software Engineering student with a special
+                        Hello, I&apos;m Fabian Rivera, a Software Engineering student with a special
                         focus on learning and developing dynamic and functional interfaces. Currently,
-                        I'm starting my path in frontend development, where I combine design and
+                        I&apos;m starting my path in frontend development, where I combine design and
                         functionality to create intuitive and engaging web experiences.
                         <br /><br />
-                        Right now, I'm dedicated to developing static and dynamic websites, and I'm
+                        Right now, I&apos;m dedicated to developing static and dynamic websites, and I&apos;m
                         also exploring the backend and database management. I use technologies such
                         as React, Tailwind, Java, and relational databases, with the aim of continuing
                         to learn and improve my skills. My goal is to continue growing as a professional,
