@@ -37,6 +37,9 @@ export const metadata: Metadata = {
     description: "Una aplicación web moderna desarrollada con Next.js.",
     images: ["https://tusitio.com/imagen-para-twitter.jpg"],
   },
+  other: {
+    google: 'notranslate',
+  }
 };
 
 export const viewport: Viewport = {
