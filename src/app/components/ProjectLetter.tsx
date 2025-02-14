@@ -9,13 +9,13 @@ import { useParams } from 'next/navigation';
 import { projects } from "@/app/lib/bd";
 export default function ProjectLetter() {
   const { id } = useParams();
-  const project = projects.find((proy) => proy.ttl === id);
+  const project = projects.find((proy) => proy.title === id);
   if (!project) return <h1>Proyecto no encontrado</h1>;
   return (
     <main className="pt-9 pr-[5%] sm:pr-[10%] pb-16 pl-[5%] sm:pl-[10%] 
     text-xl w-full overflow-hidden gap-10 flex flex-col">
       <section className="flex flex-col gap-2">
-        <motion.h1 {...AnimationUp2} className="text-6xl font-bold">{project.ttl}</motion.h1>
+        <motion.h1 {...AnimationUp2} className="text-6xl font-bold">{project.title}</motion.h1>
         <motion.div
           {...AnimationUp1}
           className="flex gap-2 items-center flex-col sm:flex-row">

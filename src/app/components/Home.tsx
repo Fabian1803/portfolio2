@@ -76,14 +76,14 @@ export default function Home() {
                 </motion.div>
                 {projects.map((list, index) => (
                     <div className="grid md:grid-cols-[40%,60%] grid-rows-[auto,auto] lg:grid-rows-[12%,83%] gap-5 mt-5 mb-5 font-semibold" key={index}>
-                        <motion.h2 {...AnimationUp1} className=" text-4xl lg:text-5xl font-bold">{index + 1}. {list.ttl}</motion.h2>
+                        <motion.h2 {...AnimationUp1} className=" text-4xl lg:text-5xl font-bold">{index + 1}. {list.title}</motion.h2>
                         <motion.div
                             {...AnimationRight(isSmallScreen)}
                             className=" row-span-2 flex md:w-[97%] justify-items-center h-[50vw] max-h-[350px] md:h-full
                              md:max-h-full items-center ">
                             <div className=" w-full h-full md:h-[30vw] 2xl:h-[23vw] relative ">
                                 <Image src={list.img} alt="imagen de proyecto" className=" w-full h-full md:h-[30vw] 2xl:h-[23vw] rounded-lg xl:object-cover" />
-                                <Link href={`/projectLetter/${list.ttl}`} className="absolute bg-secondary text-tertiary pr-4 pl-4 pt-3 pb-3 rounded-full 
+                                <Link href={`/projectLetter/${list.title}`} className="absolute bg-secondary text-tertiary pr-4 pl-4 pt-3 pb-3 rounded-full 
                                 aspect-auto left-[90%] top-[85%] border-2 border-primary">
                                     <FontAwesomeIcon icon={faArrowRight} className="rotate-45" />
                                 </Link>
