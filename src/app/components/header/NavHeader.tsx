@@ -25,7 +25,7 @@ const NavHeader = React.memo(({ setValClick, pathname }:
   return (
     <ul className="sm:flex gap-5 w-full">
       {list.map((lis, index) => (
-        <li key={index} className="font-semibold">
+        <li key={index} className="font-bold">
           <button onClick={() => scrollToSection(isActive('/') ? lis.section1 : lis.section2)}>
             {isActive('/') ? lis.label1 : lis.label2}
           </button>

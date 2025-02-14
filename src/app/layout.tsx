@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Signika_Negative } from "next/font/google";
 import { Header, Footer,  } from "@/app/components/index"
 import "./globals.css";
 
@@ -10,6 +10,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const signikaNegative = Signika_Negative({
+  variable: "--font-signika-negative",
   subsets: ["latin"],
 });
 
@@ -59,7 +64,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${signikaNegative.variable} antialiased`}
         id='home' 
       >
         <Header />

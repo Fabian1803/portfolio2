@@ -33,7 +33,7 @@ export default function Header() {
     <header className="w-full h-[60px] sm:h-[70px] lg:h-[80px] sticky top-0 bg-secondary z-50 border-b-2 border-solid border-quaternary">
       <motion.div {...AnimationUp1}
         className="w-full h-[100%] z-50 flex justify-between items-center pr-[10%] pl-[10%]">
-        <Link href="/" className="font-inter text-2xl font-semibold">
+        <Link href="/" className="text-2xl font-bold">
           {isSmallScreen ? 'Fbn.' : 'Fabian.'}
         </Link>
         <button onClick={() => setValClick(!valClick)} className="sm:hidden">

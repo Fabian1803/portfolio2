@@ -4,7 +4,6 @@ import { faGithub, faLinkedin, faGoogle } from "@fortawesome/free-brands-svg-ico
 import { faGraduationCap, faBook, faStarOfLife, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { technology, projects } from "@/app/lib/bd";
 import CicleShapes, { RectangularShape, DobleBoxShapes } from "@/app/ui/SvgShapes";
-import img from "@/app/assets/pre1.jpg";
 import Image from "next/image";
 import LetterCarousel from "@/app/ui/LetterCarousel";
 import { AnimateOpacity, AnimationUp1, AnimationUp2, AnimationRight, AnimationLeft } from "@/app/lib/animations";
@@ -18,12 +17,12 @@ export default function Home() {
             <section className="pt-5 pr-[5%] sm:pr-[10%] pb-5 pl-[5%] sm:pl-[10%] text-xl w-full overflow-hidden" >
                 <div>
                     <motion.div  {...AnimationUp2} className="flex gap-1" translate="no">
-                        <h2 >Hi! i am </h2><h2 className="border-b-2 border-foreground border-solid font-semibold">Fabian</h2>
+                        <h2 >Hi! i am </h2><h2 className="border-b-2 border-foreground border-solid font-bold">Fabian</h2>
                     </motion.div>
                 </div>
                 <div className="flex w-full h-auto mb-5 sm:mb-10  relative">
                     <div className="text-[clamp(1rem,_15vw,_9rem)] text-center m-0 h-full z-10
-                    flex items-center justify-star leading-[90%]  font-semibold tracking-4">
+                    flex items-center justify-star leading-[90%]  font-bold tracking-4">
                         <motion.h1 {...AnimationUp1}>Software<br />Engineer</motion.h1>
                         <div className="flex items-end">
                             <div className="w-[clamp(5rem,_15vw,_7.5rem)] h-[clamp(5rem,_15vw,_7.5rem)] 
@@ -71,27 +70,27 @@ export default function Home() {
                     <div className="w-[clamp(4rem,_8vw,_10rem)] h-[clamp(4rem,_8vw,_7rem)]">
                         <DobleBoxShapes />
                     </div>
-                    <h1 className="text-[clamp(3rem,_5vw,_7rem)] text-center m-0 h-full  leading-[100%] font-semibold">
+                    <h1 className="text-[clamp(3rem,_5vw,_7rem)] text-center m-0 h-full  leading-[100%] font-bold">
                         Projects
                     </h1>
                 </motion.div>
                 {projects.map((list, index) => (
                     <div className="grid md:grid-cols-[40%,60%] grid-rows-[auto,auto] lg:grid-rows-[12%,83%] gap-5 mt-5 mb-5 font-semibold" key={index}>
-                        <motion.h2 {...AnimationUp1} className=" text-4xl lg:text-5xl  ">{index + 1}. {list.titulo}</motion.h2>
+                        <motion.h2 {...AnimationUp1} className=" text-4xl lg:text-5xl font-bold">{index + 1}. {list.title}</motion.h2>
                         <motion.div
                             {...AnimationRight(isSmallScreen)}
                             className=" row-span-2 flex md:w-[97%] justify-items-center h-[50vw] max-h-[350px] md:h-full
                              md:max-h-full items-center ">
                             <div className=" w-full h-full md:h-[30vw] 2xl:h-[23vw] relative ">
-                                <Image src={img} alt="imagen de proyecto" className=" w-full h-full md:h-[30vw] 2xl:h-[23vw] rounded-lg xl:object-cover" />
-                                <Link href="/projectLetter" className="absolute bg-secondary text-tertiary pr-4 pl-4 pt-3 pb-3 rounded-full 
+                                <Image src={list.img} alt="imagen de proyecto" className=" w-full h-full md:h-[30vw] 2xl:h-[23vw] rounded-lg xl:object-cover" />
+                                <Link href={`/projectLetter/${list.title}`} className="absolute bg-secondary text-tertiary pr-4 pl-4 pt-3 pb-3 rounded-full 
                                 aspect-auto left-[90%] top-[85%] border-2 border-primary">
                                     <FontAwesomeIcon icon={faArrowRight} className="rotate-45" />
                                 </Link>
                             </div>
                         </motion.div>
                         <div className="flex flex-col gap-8 items-start ">
-                            <motion.p {...AnimationLeft(isSmallScreen)} className="text-justify font-light ">
+                            <motion.p {...AnimationLeft(isSmallScreen)} className="text-justify font-normal ">
                                 {list.summary}
                             </motion.p>
 
@@ -111,8 +110,8 @@ export default function Home() {
             <section className="sm:pt-5 pr-[5%] sm:pr-[10%] pb-5 sm:pb-16 pl-[5%] sm:pl-[10%] 
             flex flex-col gap-16 overflow-hidden text-[17px] sm:text-lg" id="about">
                 <div className="grid lg:grid-cols-[50%,50%] items-center">
-                    <motion.div {...AnimationLeft(isSmallScreen)} className="w-full text-center flex gap-2 items-center justify-start   sm:pb-8 lg:p-0">
-                        <h2 className=" text-[clamp(4rem,_6vw,_7rem)] font-semibold justify-start ">About me </h2>
+                    <motion.div {...AnimationLeft(isSmallScreen)} className="w-full text-center flex gap-2 items-center justify-start  sm:pb-8 lg:p-0">
+                        <h2 className=" text-[clamp(4rem,_6vw,_7rem)] font-bold justify-start ">About me </h2>
                         <FontAwesomeIcon icon={faStarOfLife} />
                     </motion.div>
                     <motion.p className="text-justify" {...AnimationRight(isSmallScreen)}>
@@ -130,7 +129,7 @@ export default function Home() {
                     </motion.p>
                 </div>
                 <div className="grid md:grid-cols-[50%,50%] items-center">
-                    <motion.h2 {...AnimationLeft(isSmallScreen)} className="w-full text-star text-[clamp(3rem,_6vw,_7rem)] font-semibold leading-[90%]">
+                    <motion.h2 {...AnimationLeft(isSmallScreen)} className="w-full text-star text-[clamp(4rem,_5.5vw,_6rem)] font-bold leading-[90%]">
                         Training & Experience
                     </motion.h2>
                     <div className="p-5">
@@ -140,17 +139,17 @@ export default function Home() {
                                 <span className="absolute flex text-background items-center justify-center w-6 h-6 bg-secondary rounded-md -start-3 ring-4 ring-secondary">
                                     <FontAwesomeIcon icon={faGraduationCap} />
                                 </span>
-                                <h3 className="mb-1 text-lg font-semibold text-quaternary">Software Engineering</h3>
-                                <motion.time {...AnimationUp1} className="block mb-2 text-sm font-normal leading-none text-secondary">2021 - Currently studying</motion.time>
-                                <motion.p {...AnimationUp1} className="font-normal text-tertiary">I am currently studying Software Engineering at the Technological University of Peru (UTP).</motion.p>
+                                <h3 className="mb-1 text-lg font-bold text-quaternary">Software Engineering</h3>
+                                <motion.time {...AnimationUp1} className="block mb-2 text-sm leading-none text-secondary">2021 - Currently studying</motion.time>
+                                <motion.p {...AnimationUp1} className="text-tertiary">I am currently studying Software Engineering at the Technological University of Peru (UTP).</motion.p>
                             </li>
                             <li className="ms-6">
                                 <span className="absolute flex text-background items-center justify-center w-6 h-6 bg-secondary rounded-md -start-3 ring-4 ring-secondary">
                                     <FontAwesomeIcon icon={faBook} />
                                 </span>
-                                <h3 className="mb-1 text-lg font-semibold text-quaternary">Freelanding</h3>
-                                <motion.time {...AnimationUp1} className="block mb-2 text-sm font-normal leading-none text-secondary">2024</motion.time>
-                                <motion.p {...AnimationUp1} className=" font-normal text-tertiary">I started working as a freelancer in my free time, while I pursue my studies.</motion.p>
+                                <h3 className="mb-1 text-lg font-bold text-quaternary">Freelanding</h3>
+                                <motion.time {...AnimationUp1} className="block mb-2 text-sm leading-none text-secondary">2024</motion.time>
+                                <motion.p {...AnimationUp1} className="text-tertiary">I started working as a freelancer in my free time, while I pursue my studies.</motion.p>
                             </li>
                         </motion.ol>
                     </div>

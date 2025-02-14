@@ -8,7 +8,7 @@ const LetterCarousel = () => {
   for (let i = 0; i < 24; i++) {
     items.push(
       <React.Fragment key={i}>
-        <p className="text-lg mx-5 items-center gap-2 flex font-semibold">
+        <p className="text-lg mx-5 items-center gap-2 flex font-bold">
           TECHNOLOGYS
           <FontAwesomeIcon icon={faStarOfLife} className="text-[15px]" />
         </p>
