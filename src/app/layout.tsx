@@ -1,17 +1,7 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono, Signika_Negative } from "next/font/google";
+import { Signika_Negative } from "next/font/google";
 import { Header, Footer,  } from "@/app/components/index"
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const signikaNegative = Signika_Negative({
   variable: "--font-signika-negative",
