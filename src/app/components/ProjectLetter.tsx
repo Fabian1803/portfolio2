@@ -1,8 +1,7 @@
 'use client';
-import img from "@/app/assets/pre1.jpg";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHtml5, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 import { AnimationUp1, AnimationUp2, AnimateOpacity } from "@/app/lib/animations";
 import { useParams } from 'next/navigation';
