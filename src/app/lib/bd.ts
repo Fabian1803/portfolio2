@@ -1,4 +1,4 @@
-import {  faJs, faReact, faJava, faPython, faSass, faAngular, faVuejs, faAws, faNode } from '@fortawesome/free-brands-svg-icons';
+import {  faJs, faReact, faJava, faPython, faAngular, faVuejs, faAws, faNode } from '@fortawesome/free-brands-svg-icons';
 export const technology = [
     { icon: faAngular, text: "Angular", },
     { icon: faReact, text: "React", },
