@@ -55,8 +55,8 @@ export default function Home() {
                     {technology.map((list, index) => (
                         <motion.div className="border-2 border-dashed border-quaternary rounded-lg h-14 
                         flex gap-2 justify-center items-center text-quaternary" key={index} {...AnimateOpacity}>
-                            <FontAwesomeIcon icon={list.icon} />
-                            <p>{list.text}</p>
+                            <FontAwesomeIcon icon={list.icon} className="text-2xl" />
+                            <p className="text-[17px]">{list.text}</p>
                         </motion.div>
                     ))}
                 </div>
@@ -90,7 +90,7 @@ export default function Home() {
                             </div>
                         </motion.div>
                         <div className="flex flex-col gap-8 items-start ">
-                            <motion.p {...AnimationLeft(isSmallScreen)} className="text-justify font-normal ">
+                            <motion.p {...AnimationLeft(isSmallScreen)} className="text-justify font-normal line-clamp-6">
                                 {list.summary}
                             </motion.p>
 
